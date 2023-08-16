@@ -1,0 +1,12 @@
+# AQ3 Air quality 3 sensor configuration options
+
+# Copyright (c) 2023 Quasar Concept
+# SPDX-License-Identifier: Apache-2.0
+
+config AQ3
+	bool "AQ3 Air quality 3 Sensor"
+	default y
+	depends on DT_HAS_MIKROELEKTRONIKA_AQ3_ENABLED
+	select I2C
+	help
+	  Enable driver for AQ3 Air quality 3 sensors.

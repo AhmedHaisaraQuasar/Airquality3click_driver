@@ -1,0 +1,21 @@
+# Copyright (c) 2019, Quasar Concept
+# SPDX-License-Identifier: Apache-2.0
+
+description: |
+    Air quality 3 sensor 
+
+compatible: "mikroelektronika,aq3"
+
+include: [sensor-device.yaml, i2c-device.yaml]
+
+properties:
+  aq3-reset-gpios:
+    type: phandle-array
+    required: true
+    description: |
+      GPIO connected to the sensor's RESET signal.
+  aq3-wk-gpios:
+    type: phandle-array
+    required: true
+    description: |
+      GPIO connected to the sensor's WAKE-UP signal.  
